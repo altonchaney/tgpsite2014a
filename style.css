@@ -1,0 +1,134 @@
+body{
+	background-color:#fff;
+	color:#333;
+	font-family:'PT Serif', Georgia, Times, serif;
+	font-size:15px;
+	width:100%;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+	.navbar {
+		height:90px;
+		background-color:#fff;
+		border-bottom:1px solid #333;
+		width: 100%;
+		padding-top: 15px;
+		text-align: center;
+		z-index: 9999;
+	}
+		ul.nav {
+			list-style:none;
+			display:block;
+			vertical-align:middle;
+			padding: 0;
+		}
+		li.nav {
+			display:inline;
+			margin:auto 25px;
+		}
+		a {
+			font-family:'Oswald', Impact, Charcoal, sans-serif;
+			font-weight:bold;
+			text-decoration: none;
+			font-size: 18px;
+			letter-spacing: -.5px;
+			color: #333;
+			display: inline-block;
+			transition:opacity .5s ease-in-out;
+			-webkit-transition:opacity .5s ease-in-out;
+		}
+		a:hover,active{
+			opacity:.5;
+		}
+		img.nav {
+			max-height:50px;
+			margin-bottom: -20px;
+		}
+	#controls {
+		position: fixed;
+		width: 100%;
+		top:50%;
+		z-index: 999 !important;
+	}
+		#prev {
+			float: left;
+			margin-left:2%;
+		}
+		#next {
+			float: right;
+			margin-right:2%;
+		}
+	section{
+		background-color: #111;
+		top:100px;
+		bottom:0px;
+		width: 100%;
+		position: absolute;
+		z-index: 0;
+		min-height: 500px;
+		overflow: hidden;
+	}
+	
+	#ratg{
+		background:#111 url('img/ratg1.png') cover no-repeat center;
+	}
+
+	.cycler, img.gameimg {
+		position: absolute;
+		top: 1px;
+		z-index:-9999;
+	}
+		.dark {color:#333;}
+		.light {color:#fff;}
+		.right {float:right;}
+
+	.container{
+		max-width:960px;
+		margin: 0 auto;
+	}
+		.descriptioncontainer{
+			width:200px;
+			margin: auto 10%;
+			display: table;
+		}
+		.description {
+			display:table-cell;
+			vertical-align: middle;
+			margin: 0 auto;
+			width:100%;
+			z-index: 99999 !important;
+		}
+			h1 {
+				font-family:'Oswald', Impact, Charcoal, sans-serif;
+				text-transform:uppercase;
+				text-align:center;
+				white-space:nowrap;
+				margin:0;
+				margin-bottom: -2px;
+			}
+			#titleratg {
+				font-size:30px;
+				letter-spacing:-1px;
+			}
+			hr {
+				height:1px;
+				border: 0;
+				width:100px;
+				margin:12px auto;
+			}
+			hr.dark {background-color:#333;}
+			hr.light {background-color:#fff;}
+			h2 {
+				font-family:'Oswald', Impact, Charcoal, sans-serif;
+				font-weight: normal;
+				letter-spacing: -.25px;
+				font-size:15px;
+				text-align:center;
+				white-space:nowrap;
+			}
+			p {
+				text-indent:15px;
+				text-align:justify;
+				line-height:18px;
+			}
