@@ -64,14 +64,15 @@ body{
 		top:100px;
 		bottom:0px;
 		width: 100%;
-		position: absolute;
 		z-index: 0;
 		min-height: 500px;
-		overflow: hidden;
+		height:100%;
 	}
 	
 	#ratg{
-		background:#111 url('img/ratg1.png') cover no-repeat center;
+		background-image:url('img/ratg1.jpg');
+		background-position:center;
+		background-size:cover;
 	}
 
 	.cycler, img.gameimg {

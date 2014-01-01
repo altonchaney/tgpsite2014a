@@ -9,20 +9,33 @@
     <script>
 	$(window).load(function(){
 		$('body') .css({'height': (($(window).height()))+'px'});
-		$('.gameimg') .css({'width': ($(window).width())+'px'});
+		$('section') .css({'height': (($(window).height()) - 101)+'px'});
+		$('section') .css({'width': (($(window).width()))+'px'});
+		$('#slideshow') .css({'height': (($(window).height()) - 101)+'px'});
+		$('#slideshow') .css({'width': (($(window).width()))+'px'});
 		$('.descriptioncontainer') .css({'height': (($('section').height()))+'px'});
+		
+		var slideroptions = {
+		    fx: 'scrollHorz',
+		    speed: 600,
+		    timeout: 10000,
+		    prev: '#prev',
+		    next: '#next',
+		    slideResize: 0,
+		    fit:1
+		}
+		
+		$('#slideshow').cycle(slideroptions);
+		
 		$(window).resize(function(){
 		    $('body') .css({'height': (($(window).height()))+'px'});
-		    $('.gameimg') .css({'width': ($(window).width())+'px'});
+		    $('section') .css({'height': (($(window).height()) - 101)+'px'});$('section') .css({'width': (($(window).width()))+'px'});
 		    $('.descriptioncontainer') .css({'height': (($('section').height()))+'px'});
+		    $('#slideshow') .css({'height': (($(window).height()) - 101)+'px'});
+		    $('#slideshow') .css({'width': (($(window).width()))+'px'});
+		    $("#slideshow").cycle('destroy');
+		    $('#slideshow').cycle(slideroptions);
 		});
-		var slideshow = $('#slideshow').cycle({
-		fx: 'scrollHorz',
-		speed: 600,
-		timeout: 0,
-		prev: '#prev',
-		next: '#next',
-	    });
 	});
     </script>
     <link href='http://fonts.googleapis.com/css?family=PT+Serif:400,400italic|Oswald:400,700,300' rel='stylesheet' type='text/css'>
@@ -58,15 +71,10 @@
 			    </div>
 			</div>
 		    </div>
-		    <div class="cycler">
-			<img src="img/ratg1.jpg" class="gameimg"/>
-			<img src="img/ratg2.jpg" class="gameimg"/>
-			<img src="img/ratg3.jpg" class="gameimg"/>
-		    </div>
 	</section>
 	<section id="urbansprawl">
 		    <div class="container">
-			<div class="descriptioncontainer right">
+			<div class="descriptioncontainer left">
 			    <div class="description light">
 				    <h1 id="titleratg">Rick & the Ghost</h1>
 				    <hr class="light">
@@ -75,11 +83,6 @@
 				    <p>AUSTIN, TX—Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eleifend massa tellus, a posuere felis accumsan eu. Ut aliquam, sapien non aliquam molestie, purus est consequat orci, nec ultricies felis eros eget justo. Duis quis magna sem. Donec enim lorem, ultricies in suscipit eget, interdum a felis. Phasellus sit amet nulla mi. In vitae felis quis risus placerat dictum vel a sem. Cras odio nisl, posuere sit amet gravida vitae, viverra at nulla. Vestibulum ultrices pulvinar diam.</p>
 			    </div>
 			</div>
-		    </div>
-		    <div class="cycler">
-			<img src="img/ratg1.jpg" class="gameimg"/>
-			<img src="img/ratg2.jpg" class="gameimg"/>
-			<img src="img/ratg3.jpg" class="gameimg"/>
 		    </div>
 	</section>
     </div>
