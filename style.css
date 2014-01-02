@@ -73,7 +73,31 @@ body{
 	}
 	
 	#ratg{
-		background-image:url('img/ratg1.jpg');
+		background-image:url('img/ratg.png');
+		background-position:center;
+		background-size:cover;
+	}
+	
+	#urbansprawl{
+		background-image:url('img/urbansprawl.png');
+		background-position:center;
+		background-size:cover;
+	}
+	
+	#ninelives{
+		background-image:url('img/9lives.png');
+		background-position:center;
+		background-size:cover;
+	}
+	
+	#polyplane{
+		background-image:url('img/polyplane.png');
+		background-position:center;
+		background-size:cover;
+	}
+	
+	#construction{
+		background-image:url('img/construction.png');
 		background-position:center;
 		background-size:cover;
 	}
@@ -113,6 +137,18 @@ body{
 			}
 			#titleratg {
 				font-size:30px;
+				letter-spacing:-1px;
+			}
+			#titleurbansprawl {
+				font-size:40px;
+				letter-spacing:-1px;
+			}
+			#titleninelives {
+				font-size:60px;
+				letter-spacing:-1px;
+			}
+			#titlepolyplane {
+				font-size:47px;
 				letter-spacing:-1px;
 			}
 			hr {
