@@ -5,112 +5,101 @@
     <title>the gaming project</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="http://malsup.github.com/jquery.cycle.all.js"></script>
-    <script>
-	$(window).load(function(){
-		$('body') .css({'height': (($(window).height()))+'px'});
-		$('section') .css({'height': (($(window).height()) - 101)+'px'});
-		$('section') .css({'width': (($(window).width()))+'px'});
-		$('#slideshow') .css({'height': (($(window).height()) - 101)+'px'});
-		$('#slideshow') .css({'width': (($(window).width()))+'px'});
-		$('.descriptioncontainer') .css({'height': (($('section').height()))+'px'});
-		
-		var slideroptions = {
-		    fx: 'scrollHorz',
-		    speed: 600,
-		    timeout: 20000,
-		    prev: '#prev',
-		    next: '#next',
-		    slideResize: 0,
-		    fit:1
-		}
-		
-		$('#slideshow').cycle(slideroptions);
-		
-		$(window).resize(function(){
-		    $('body') .css({'height': (($(window).height()))+'px'});
-		    $('section') .css({'height': (($(window).height()) - 101)+'px'});$('section') .css({'width': (($(window).width()))+'px'});
-		    $('.descriptioncontainer') .css({'height': (($('section').height()))+'px'});
-		    $('#slideshow') .css({'height': (($(window).height()) - 101)+'px'});
-		    $('#slideshow') .css({'width': (($(window).width()))+'px'});
-		    $("#slideshow").cycle('destroy');
-		    $('#slideshow').cycle(slideroptions);
-		});
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="application/x-javascript">
+	$(function(){
+	    $('.item').css({'height': (($(window).height())-80)+'px'});
+	    $(window).resize(function(){
+		$('.item').css({'height': (($(window).height())-80)+'px'});
+	    });
 	});
     </script>
-    <link href='http://fonts.googleapis.com/css?family=PT+Serif:400,400italic|Oswald:400,700,300' rel='stylesheet' type='text/css'>
-    <link href="style.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=PT+Serif:400,400italic|Oswald:400,700,300' rel="stylesheet" type="text/css">
+    <link href="css/bootstrap.css" rel="stylesheet">
     <link rel="shortcut icon" href="img/favicon.ico">
     <link rel="icon" type="image/x-icon" href="img/favicon.ico">
     <meta charset="utf-8">
 </head>
 <body>
-    <nav class="navbar">
-    	<ul class="nav">
-    		<li class="nav"><a class="nav" href="#">GAMES</a></li>
-    		<li class="nav"><a class="nav" href="/projects">PROJECTS</a></li>
-    		<li class="nav"><a class="nav" href="#"><img class="nav" src="img/logo.png"></a></li>
-    		<li class="nav"><a class="nav" href="/about">ABOUT</a></li>
-    		<li class="nav"><a class="nav" href="/blog">BLOG</a></li>
-    	</ul>
+    <nav class="navbar navbar-default" role="navigation">
+	<div class="navbar-header">
+	    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+	    </button>
+	    <a class="navbar-brand" href="#"><img class="nav" src="img/logo.png"></a>
+	</div>
+	<div class="collapse navbar-collapse" id="main-nav">
+	    <ul class="nav navbar-nav">
+		    <li class="nav"><a class="nav" href="#">GAMES</a></li>
+		    <li class="nav"><a class="nav" href="/projects">PROJECTS</a></li>
+		    <li class="nav"><a class="nav" href="/about">ABOUT</a></li>
+		    <li class="nav"><a class="nav" href="/blog">BLOG</a></li>
+	    </ul>
+	</div>
     </nav>
-    <div id="controls">
-	<a id="prev" href="#"><img src="img/arrowleft.png" width="30px"></a>
-	<a id="next" href="#"><img src="img/arrowright.png" width="30px"></a>
-    </div>
-    <div id="slideshow">
-	<section id="ratg">
-		    <div class="container">
-			<div class="descriptioncontainer left">
-			    <div class="description light">
-				    <h1 id="titleratg"><a href="/webgames/rickandtheghost/">Rick & the Ghost</a></h1>
+    <div id="home-content" class="carousel slide" data-ride="carousel">
+	    <div class="carousel-inner">
+		<div class="item active" id="ratg">
+		    <div class="carousel-caption">
+			<div class="row carousel-container">
+			    <div class="col-md-4 col-sm-6 col-xs-offset-1 col-xs-10 carousel-cell">
+				    <h1><a href="/webgames/rickandtheghost/">Rick & the Ghost</a></h1>
 				    <hr class="light">
-				    <h2>Dec 2013&nbsp;&nbsp;·&nbsp;&nbsp;HTML5&nbsp;&nbsp;·&nbsp;&nbsp;<a href="/webgames/9lives/" target="_blank">Ludum Dare 28</a></h2>
+				    <h2>Dec 2013&nbsp;&nbsp;·&nbsp;&nbsp;HTML5&nbsp;&nbsp;·&nbsp;&nbsp;<a href="/webgames/9lives/">Ludum Dare 28</a></h2>
 				    <hr class="light">
 				    <p>AUSTIN, TX—Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eleifend massa tellus, a posuere felis accumsan eu. Ut aliquam, sapien non aliquam molestie, purus est consequat orci, nec ultricies felis eros eget justo. Duis quis magna sem. Donec enim lorem, ultricies in suscipit eget, interdum a felis. Phasellus sit amet nulla mi. In vitae felis quis risus placerat dictum vel a sem. Cras odio nisl, posuere sit amet gravida vitae, viverra at nulla. Vestibulum ultrices pulvinar diam.</p>
 			    </div>
 			</div>
 		    </div>
-	</section>
-	<section id="urbansprawl">
-		    <div class="container">
-			<div class="descriptioncontainer right">
-			    <div class="description dark">
-				    <h1 id="titleurbansprawl"><a href="/webgames/urbansprawl/">Urban Sprawl</a></h1>
+		</div>
+		<div class="item" id="urbansprawl">
+		    <div class="carousel-caption">
+			<div class="row carousel-container">
+			    <div class="col-md-offset-7 col-md-4 col-sm-offset-5 col-sm-6 col-xs-offset-1 col-xs-10 carousel-cell">
+				    <h1><a href="/webgames/urbansprawl/">Urban Sprawl</a></h1>
 				    <hr class="dark">
-				    <h2>Dec 2013&nbsp;&nbsp;·&nbsp;&nbsp;HTML5&nbsp;&nbsp;·&nbsp;&nbsp;Ludum Dare 28</h2>
+				    <h2>Dec 2013&nbsp;&nbsp;·&nbsp;&nbsp;HTML5&nbsp;&nbsp;·&nbsp;&nbsp;<a href="/webgames/9lives/">Ludum Dare 28</a></h2>
 				    <hr class="dark">
-				    <p>SAN ANTONIO, TX—Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eleifend massa tellus, a posuere felis accumsan eu. Ut aliquam, sapien non aliquam molestie, purus est consequat orci, nec ultricies felis eros eget justo. Duis quis magna sem. Donec enim lorem, ultricies in suscipit eget, interdum a felis. Phasellus sit amet nulla mi. In vitae felis quis risus placerat dictum vel a sem. Cras odio nisl, posuere sit amet gravida vitae, viverra at nulla. Vestibulum ultrices pulvinar diam.</p>
+				    <p>AUSTIN, TX—Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eleifend massa tellus, a posuere felis accumsan eu. Ut aliquam, sapien non aliquam molestie, purus est consequat orci, nec ultricies felis eros eget justo. Duis quis magna sem. Donec enim lorem, ultricies in suscipit eget, interdum a felis. Phasellus sit amet nulla mi. In vitae felis quis risus placerat dictum vel a sem. Cras odio nisl, posuere sit amet gravida vitae, viverra at nulla. Vestibulum ultrices pulvinar diam.</p>
 			    </div>
 			</div>
 		    </div>
-	</section>
-	<section id="ninelives">
-		    <div class="container">
-			<div class="descriptioncontainer left">
-			    <div class="description light">
-				    <h1 id="titleninelives"><a href="/webgames/9lives/">9Lives</a></h1>
+		</div>
+		<div class="item" id="ninelives">
+		    <div class="carousel-caption">
+			<div class="row carousel-container">
+			    <div class="col-md-4 col-sm-6 col-xs-offset-1 col-xs-10 carousel-cell">
+				    <h1><a href="/webgames/9lives/">9Lives</a></h1>
 				    <hr class="light">
-				    <h2>Dec 2013&nbsp;&nbsp;·&nbsp;&nbsp;HTML5&nbsp;&nbsp;·&nbsp;&nbsp;Ludum Dare 28</h2>
+				    <h2>Dec 2013&nbsp;&nbsp;·&nbsp;&nbsp;HTML5&nbsp;&nbsp;·&nbsp;&nbsp;<a href="/webgames/9lives/">Ludum Dare 28</a></h2>
 				    <hr class="light">
-				    <p>SAN ANTONIO, TX—Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eleifend massa tellus, a posuere felis accumsan eu. Ut aliquam, sapien non aliquam molestie, purus est consequat orci, nec ultricies felis eros eget justo. Duis quis magna sem. Donec enim lorem, ultricies in suscipit eget, interdum a felis. Phasellus sit amet nulla mi. In vitae felis quis risus placerat dictum vel a sem. Cras odio nisl, posuere sit amet gravida vitae, viverra at nulla. Vestibulum ultrices pulvinar diam.</p>
+				    <p>AUSTIN, TX—Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eleifend massa tellus, a posuere felis accumsan eu. Ut aliquam, sapien non aliquam molestie, purus est consequat orci, nec ultricies felis eros eget justo. Duis quis magna sem. Donec enim lorem, ultricies in suscipit eget, interdum a felis. Phasellus sit amet nulla mi. In vitae felis quis risus placerat dictum vel a sem. Cras odio nisl, posuere sit amet gravida vitae, viverra at nulla. Vestibulum ultrices pulvinar diam.</p>
 			    </div>
 			</div>
 		    </div>
-	</section>
-	<section id="polyplane">
-		    <div class="container">
-			<div class="descriptioncontainer right">
-			    <div class="description dark">
-				    <h1 id="titlepolyplane"><a href="/webgames/polyplane/">Polyplane</a></h1>
+		</div>
+		<div class="item" id="polyplane">
+		    <div class="carousel-caption">
+			<div class="row carousel-container">
+			    <div class="col-md-offset-7 col-md-4 col-sm-offset-5 col-sm-6 col-xs-offset-1 col-xs-10 carousel-cell">
+				    <h1><a href="/webgames/polyplane/">Polyplane</a></h1>
 				    <hr class="dark">
-				    <h2>Dec 2013&nbsp;&nbsp;·&nbsp;&nbsp;HTML5&nbsp;&nbsp;·&nbsp;&nbsp;Ludum Dare 28</h2>
+				    <h2>Dec 2013&nbsp;&nbsp;·&nbsp;&nbsp;HTML5&nbsp;&nbsp;·&nbsp;&nbsp;<a href="/webgames/9lives/">Ludum Dare 28</a></h2>
 				    <hr class="dark">
-				    <p>SAN ANTONIO, TX—Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eleifend massa tellus, a posuere felis accumsan eu. Ut aliquam, sapien non aliquam molestie, purus est consequat orci, nec ultricies felis eros eget justo. Duis quis magna sem. Donec enim lorem, ultricies in suscipit eget, interdum a felis. Phasellus sit amet nulla mi. In vitae felis quis risus placerat dictum vel a sem. Cras odio nisl, posuere sit amet gravida vitae, viverra at nulla. Vestibulum ultrices pulvinar diam.</p>
+				    <p>AUSTIN, TX—Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eleifend massa tellus, a posuere felis accumsan eu. Ut aliquam, sapien non aliquam molestie, purus est consequat orci, nec ultricies felis eros eget justo. Duis quis magna sem. Donec enim lorem, ultricies in suscipit eget, interdum a felis. Phasellus sit amet nulla mi. In vitae felis quis risus placerat dictum vel a sem. Cras odio nisl, posuere sit amet gravida vitae, viverra at nulla. Vestibulum ultrices pulvinar diam.</p>
 			    </div>
 			</div>
 		    </div>
-	</section>
+		</div>
+	    </div>
+	<a class="left carousel-control" href="#home-content" data-slide="prev">
+	    <span class="glyphicon glyphicon-chevron-left"></span>
+	</a>
+	<a class="right carousel-control" href="#home-content" data-slide="next">
+	    <span class="glyphicon glyphicon-chevron-right"></span>
+	</a>
     </div>
 </body>
 </html>
