@@ -3754,8 +3754,8 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 .navbar-brand {
   float: left;
-  padding: 16px 15px;
-  margin-left: 40px;
+  padding: 4px 15px !important;
+  margin-left: 0;
   font-size: 19px;
   line-height: 18px;
 }
@@ -3798,7 +3798,11 @@ textarea.input-group-sm > .input-group-btn > .btn {
   }
 }
 .navbar-nav {
-  margin: 14px !important;
+  float: none;
+  margin: 0 auto;
+  display: table;
+  table-layout: fixed;
+  padding-top: 15px;
 }
 .navbar-nav > li > a {
   font-family: "Oswald", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -3830,10 +3834,6 @@ textarea.input-group-sm > .input-group-btn > .btn {
   }
 }
 @media (min-width: 605px) {
-  .navbar-nav {
-    float: left;
-    margin: 0;
-  }
   .navbar-nav > li {
     float: left;
   }

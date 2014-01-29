@@ -147,8 +147,8 @@
 
 .navbar-brand {
   float: left;
-  padding: @navbar-padding-vertical @navbar-padding-horizontal;
-  margin-left:40px;
+  padding: 4px @navbar-padding-horizontal !important;
+  margin-left:0;
   font-size: @font-size-large;
   line-height: @line-height-computed;
 
@@ -207,8 +207,13 @@
 // Builds on top of the `.nav` components with it's own modifier class to make
 // the nav the full height of the horizontal nav (above 768px).
 
+
 .navbar-nav {
-  margin: 14px !important;
+        float:none;
+        margin: 0 auto;
+        display: table;
+        table-layout: fixed;
+        padding-top: 15px;
 
   > li > a {
     font-family: @font-family-sans-serif;
@@ -244,8 +249,6 @@
 
   // Uncollapse the nav
   @media (min-width: @grid-float-breakpoint) {
-    float: left;
-    margin: 0;
 
     > li {
       float: left;

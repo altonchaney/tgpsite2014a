@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>the gaming project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="application/x-javascript">
+	$(function(){
+	    $('.item').css({'height': (($(window).height())-80)+'px'});
+	    $(window).resize(function(){
+		$('.item').css({'height': (($(window).height())-80)+'px'});
+	    });
+	});
+    </script>
+    <link href='http://fonts.googleapis.com/css?family=PT+Serif:400,400italic|Oswald:400,700,300' rel="stylesheet" type="text/css">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <meta charset="utf-8">
+</head>
+<body>
+    <nav class="navbar navbar-default" role="navigation">
+	<div class="navbar-header">
+	    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
+		<span class="sr-only">Toggle Navigation</span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+	    </button>
+	    <a class="navbar-brand" href="#"><img class="nav" src="img/logo.png"></a>
+	</div>
+	<div class="collapse navbar-collapse" id="main-nav">
+	    <ul class="nav navbar-nav">
+		    <li class="nav"><a class="nav" href="#">GAMES</a></li>
+		    <li class="nav"><a class="nav" href="/about">ABOUT</a></li>
+		    <li class="nav"><a class="nav" href="/blog">BLOG</a></li>
+	    </ul>
+	</div>
+    </nav>
+    <div id="home-content" class="carousel slide" data-ride="carousel">
+	    <div class="carousel-inner">
+		<div class="item active" id="gray-solid">
+		    <div class="carousel-caption">
+			<div class="row carousel-container">
+			    <div class="col-md-4 col-sm-3 col-xs-offset-1 col-xs-10 carousel-cell">
+				    <h1><a href="/webgames/rickandtheghost/">About Us</a></h1>
+				    <hr class="light">
+				    <h2>Art&nbsp;&nbsp;á&nbsp;&nbsp;Code&nbsp;&nbsp;á&nbsp;&nbsp;Nostalgia</h2>
+				    <hr class="light">
+				    <p>AUSTIN, TXÑLorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eleifend massa tellus, a posuere felis accumsan eu. Ut aliquam, sapien non aliquam molestie, purus est consequat orci, nec ultricies felis eros eget justo. Duis quis magna sem. Donec enim lorem, ultricies in suscipit eget, interdum a felis. Phasellus sit amet nulla mi. In vitae felis quis risus placerat dictum vel a sem. Cras odio nisl, posuere sit amet gravida vitae, viverra at nulla. Vestibulum ultrices pulvinar diam.</p>
+			    </div>
+			</div>
+		    </div>
+		</div>
+	    </div>
+	<a class="left carousel-control" href="#home-content" data-slide="prev">
+	    <span class="glyphicon glyphicon-chevron-left"></span>
+	</a>
+	<a class="right carousel-control" href="#home-content" data-slide="next">
+	    <span class="glyphicon glyphicon-chevron-right"></span>
+	</a>
+    </div>
+</body>
+</html>d
