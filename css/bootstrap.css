@@ -290,6 +290,11 @@ a:focus {
 img {
   vertical-align: middle;
 }
+img.about-img {
+  width: 100px;
+  margin: 0 auto;
+  display: block;
+}
 .img-responsive {
   display: block;
   max-width: 100%;
@@ -483,6 +488,18 @@ p {
   margin-top: 75%;
   font-size: 30px;
   letter-spacing: -1px;
+}
+#about h1 {
+  margin-top: 10%;
+  font-size: 30px;
+  letter-spacing: -1px;
+}
+#about a {
+  color: #fff;
+  margin-left: -16px;
+}
+#about img {
+  margin-top: 40px;
 }
 small,
 .small {
@@ -5391,11 +5408,36 @@ button.close {
   background-size: cover;
   color: #333;
 }
-#construction {
-  background-image: url('../img/construction.png');
+#about {
+  background-image: url('../img/about.png');
   background-position: center;
   background-size: cover;
   color: #fff;
+}
+.vert-center {
+  display: -webkit-box;
+  /* OLD: Safari,  iOS, Android browser, older WebKit browsers.  */
+
+  display: -moz-box;
+  /* OLD: Firefox (buggy) */
+  display: -ms-flexbox;
+  /* MID: IE 10 */
+
+  display: -webkit-flex;
+  /* NEW, Chrome 21+ */
+
+  display: flex;
+  /* NEW: Opera 12.1, Firefox 22+ */
+
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  /* OLD� */
+
+  -ms-flex-align: center;
+  /* You know the drill now� */
+
+  -webkit-align-items: center;
+  align-items: center;
 }
 .carousel-control {
   position: absolute;
