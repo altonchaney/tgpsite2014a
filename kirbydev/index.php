@@ -10,7 +10,7 @@ in which your index.php is located
 
 */
 
-$root = dirname('http://mc.thegamingproject.org/staging/site/kirbydev/');
+$root = dirname(__FILE__);
 
 
 
