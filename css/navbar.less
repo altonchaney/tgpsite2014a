@@ -224,6 +224,15 @@
   }
 
   @media (max-width: @grid-float-breakpoint-max) {
+    
+    > li {
+      float: left;
+      > a {
+        padding-right: 5px;
+        padding-left: 5px;
+      }
+    }
+    
     // Dropdowns get custom display when collapsed
     .open .dropdown-menu {
       position: static;
@@ -248,9 +257,7 @@
   }
 
   // Uncollapse the nav
-  @media (min-width: @grid-float-breakpoint) {
-
-    > li {
+  > li {
       float: left;
       > a {
         padding-top:    @navbar-padding-vertical;
@@ -261,7 +268,6 @@
     &.navbar-right:last-child {
       margin-right: -@navbar-padding-horizontal;
     }
-  }
 }
 
 

@@ -3829,6 +3829,13 @@ textarea.input-group-sm > .input-group-btn > .btn {
   line-height: 18px;
 }
 @media (max-width: 604px) {
+  .navbar-nav > li {
+    float: left;
+  }
+  .navbar-nav > li > a {
+    padding-right: 5px;
+    padding-left: 5px;
+  }
   .navbar-nav .open .dropdown-menu {
     position: static;
     float: none;
@@ -3850,17 +3857,15 @@ textarea.input-group-sm > .input-group-btn > .btn {
     background-image: none;
   }
 }
-@media (min-width: 605px) {
-  .navbar-nav > li {
-    float: left;
-  }
-  .navbar-nav > li > a {
-    padding-top: 16px;
-    padding-bottom: 16px;
-  }
-  .navbar-nav.navbar-right:last-child {
-    margin-right: -15px;
-  }
+.navbar-nav > li {
+  float: left;
+}
+.navbar-nav > li > a {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+.navbar-nav.navbar-right:last-child {
+  margin-right: -15px;
 }
 @media (min-width: 605px) {
   .navbar-left {
@@ -5385,32 +5390,42 @@ button.close {
   left: 100%;
 }
 #ratg {
-  background-image: url('../img/ratg.png');
-  background-position: center;
+  background: url('../img/ratg.png') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
   color: #fff;
 }
 #urbansprawl {
-  background-image: url('../img/urbansprawl.png');
-  background-position: center;
+  background: url('../img/urbansprawl.png') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
   color: #333;
 }
 #ninelives {
-  background-image: url('../img/9lives.png');
-  background-position: center;
+  background: url('../img/9lives.png') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
   color: #fff;
 }
 #polyplane {
-  background-image: url('../img/polyplane.png');
-  background-position: center;
+  background: url('../img/polyplane.png') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
   color: #333;
 }
 #about {
-  background-image: url('../img/about.png');
-  background-position: center;
+  background: url('../img/about.png') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
   color: #fff;
 }
