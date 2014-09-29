@@ -3,13 +3,17 @@
   height: 290px;
   margin: 0 auto;
   padding: 0 0 0 20px;
-  background-image: "cartridge-background@2x.png";
-  background-size: 50% 50%;
+  background-image: url("../img/cartridge-background@2x.png");
+  background-size: 100% 100%;
 }
 .gameimage {
   width: 176px;
   height: 175px;
-  margin-top: 1px;
+  padding-top: 1px;
+  float: left;
+}
+.gameimage > img {
+  width: 100%;
 }
 .gameinfobar {
   margin: 0 auto;
@@ -18,9 +22,9 @@
   text-align: center;
 }
 p.gameyear {
-  font-weight: 500;
+  font-weight: 400;
   font-size: 18px;
-  letter-spacing: -1px;
+  letter-spacing: -0.5px;
   color: #cccccc;
   margin-bottom: 10px;
 }
@@ -31,32 +35,47 @@ img.gameplatformicon {
 }
 div.gameplaybutton {
   border-radius: 4px;
+  width: 156px;
+  height: 44px;
+  float: left;
   margin-top: 20px;
 }
 div.gameplaybutton p {
-  font-weight: 500;
+  font-weight: 400;
   font-size: 20px;
   color: #000000;
   opacity: .4;
   text-align: center;
+  margin-top: 8px;
 }
-div.gameplaybutton .green {
-  background: #5ad856;
+.green {
+  background-color: #5ad856;
 }
-div.gameplaybutton .yellow {
-  background: #d8d856;
+.yellow {
+  background-color: #d8d856;
 }
-div.gameplaybutton .red {
-  background: #d86556;
+.red {
+  background-color: #d86556;
 }
-div.gameplaybutton .gray {
-  background: #d8d8d8;
+.gray {
+  background-color: #d8d8d8;
 }
 div.gameinfobutton {
   border-radius: 4px;
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  width: 44px;
+  height: 44px;
+  float: left;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+div.gameinfobutton p {
   font-family: "georgia";
   font-style: italic;
   font-size: 25px;
   color: #b3b3b3;
   text-align: center;
+  margin-top: 4px;
+  margin-left: -1px;
 }
