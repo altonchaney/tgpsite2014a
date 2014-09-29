@@ -12,7 +12,7 @@
   position: relative;
   min-height: @navbar-height; // Ensure a navbar always shows (e.g., without a .navbar-brand in collapsed mode)
   margin-bottom: @navbar-margin-bottom;
-  border: 1px solid transparent;
+  background: url("../img/nav-tile.png") repeat-x fixed;
 
   // Prevent floats from breaking the navbar
   &:extend(.clearfix all);
@@ -117,6 +117,13 @@
   }
 }
 
+.navbarcontainer {
+	margin: 0 auto;
+	max-width: 960px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
 
 //
 // Navbar alignment options
@@ -163,10 +170,13 @@
 
 .navbar-brand {
   float: left;
-  padding: @navbar-padding-vertical @navbar-padding-horizontal;
+  padding: 0;
   font-size: @font-size-large;
-  line-height: @line-height-computed;
   height: @navbar-height;
+  .navlogo {
+  		width: 172px;
+  		margin: 21px 20px 15px 0;
+  }
 
   &:hover,
   &:focus {
@@ -179,6 +189,16 @@
       margin-left: -@navbar-padding-horizontal;
     }
   }
+}
+
+// Social Icons
+.navsocial {
+	margin: -5px 0 auto -25px;
+	padding: 0;
+	height: 25px;
+	&:hover {
+		opacity: .5;
+	}
 }
 
 
@@ -227,12 +247,17 @@
 // the nav the full height of the horizontal nav (above 768px).
 
 .navbar-nav {
-  margin: (@navbar-padding-vertical / 2) -@navbar-padding-horizontal;
+  
 
   > li > a {
-    padding-top:    10px;
-    padding-bottom: 10px;
-    line-height: @line-height-computed;
+  	font-size: 17px;
+	letter-spacing: -1px;
+	margin: 20px 20px auto 10px;
+  }
+  
+  .navsocial {
+  	margin-right: 0;
+  	margin-left: 5px;
   }
 
   @media (max-width: @grid-float-breakpoint-max) {
@@ -267,8 +292,6 @@
     > li {
       float: left;
       > a {
-        padding-top:    @navbar-padding-vertical;
-        padding-bottom: @navbar-padding-vertical;
       }
     }
 
@@ -388,7 +411,6 @@
 
 // Default navbar
 .navbar-default {
-  background-color: @navbar-default-bg;
   border-color: @navbar-default-border;
 
   .navbar-brand {
@@ -396,7 +418,6 @@
     &:hover,
     &:focus {
       color: @navbar-default-brand-hover-color;
-      background-color: @navbar-default-brand-hover-bg;
     }
   }
 
@@ -406,20 +427,19 @@
 
   .navbar-nav {
     > li > a {
-      color: @navbar-default-link-color;
+      color: @link-color;
 
       &:hover,
       &:focus {
-        color: @navbar-default-link-hover-color;
-        background-color: @navbar-default-link-hover-bg;
+        color: @link-hover-color;
       }
     }
     > .active > a {
       &,
       &:hover,
       &:focus {
-        color: @navbar-default-link-active-color;
-        background-color: @navbar-default-link-active-bg;
+        color: @link-hover-color;
+        font-weight: 700;
       }
     }
     > .disabled > a {
@@ -427,7 +447,6 @@
       &:hover,
       &:focus {
         color: @navbar-default-link-disabled-color;
-        background-color: @navbar-default-link-disabled-bg;
       }
     }
   }
@@ -455,7 +474,6 @@
       &,
       &:hover,
       &:focus {
-        background-color: @navbar-default-link-active-bg;
         color: @navbar-default-link-active-color;
       }
     }
@@ -468,7 +486,6 @@
           &:hover,
           &:focus {
             color: @navbar-default-link-hover-color;
-            background-color: @navbar-default-link-hover-bg;
           }
         }
         > .active > a {
@@ -476,7 +493,6 @@
           &:hover,
           &:focus {
             color: @navbar-default-link-active-color;
-            background-color: @navbar-default-link-active-bg;
           }
         }
         > .disabled > a {
@@ -499,7 +515,6 @@
   .navbar-link {
     color: @navbar-default-link-color;
     &:hover {
-      color: @navbar-default-link-hover-color;
     }
   }
 
