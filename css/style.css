@@ -902,7 +902,6 @@ a {
 a:hover,
 a:focus {
   color: #626566;
-  text-decoration: underline;
 }
 a:focus {
   outline: thin dotted;
@@ -5362,12 +5361,12 @@ button.close {
   outline: 0;
 }
 .modal.fade .modal-game {
-  -webkit-transform: translate3d(0, -25%, 0);
-  transform: translate3d(0, -25%, 0);
-  -webkit-transition: -webkit-transform 0.3s ease-out;
-  -moz-transition: -moz-transform 0.3s ease-out;
-  -o-transition: -o-transform 0.3s ease-out;
-  transition: transform 0.3s ease-out;
+  -webkit-transform: translate3d(0, -100%, 0);
+  transform: translate3d(0, -100%, 0);
+  -webkit-transition: -webkit-transform 0.5s ease-out;
+  -moz-transition: -moz-transform 0.5s ease-out;
+  -o-transition: -o-transform 0.5s ease-out;
+  transition: transform 0.5s ease-out;
 }
 .modal.in .modal-game {
   -webkit-transform: translate3d(0, 0, 0);
@@ -5384,14 +5383,9 @@ button.close {
 }
 .modal-content {
   position: relative;
-  background-color: #ffffff;
-  border: 1px solid #999999;
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  border-radius: 6px;
-  -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
-  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
   background-clip: padding-box;
   outline: 0;
+  height: 522px;
 }
 .modal-backdrop {
   position: fixed;
@@ -5426,10 +5420,11 @@ button.close {
   position: relative;
   width: 300px;
   height: 340px;
-  margin: 0 auto;
-  padding: 0 30px 0 30px;
+  margin: -108px auto 0 auto;
+  padding: 24px 30px 0 30px;
   background-image: url("../img/gameboy-background@2x.png");
   background-size: 100% 100%;
+  font-family: 'Source Sans Pro', Menlo, Monaco, monospace;
 }
 .modal-footer {
   padding: 15px;
@@ -6246,4 +6241,43 @@ div.gameinfobutton p {
   text-align: center;
   margin-top: 4px;
   margin-left: -1px;
+}
+.modal-closebutton {
+  float: left;
+  font-weight: 300;
+  text-align: left;
+  opacity: .5;
+  color: #000000;
+  font-size: 12px;
+  vertical-align: middle;
+  padding-top: 5px;
+  margin-right: -130px;
+}
+.modal-gametitle {
+  font-weight: 700;
+  text-align: center;
+  font-size: 19px;
+  letter-spacing: 1px;
+  opacity: .5;
+}
+.modal-divider {
+  margin-top: 10px;
+  margin-bottom: 0px;
+  border-top: 1px dotted #000000;
+  opacity: .5;
+}
+.modal-gameinfo {
+  margin-top: 10px;
+  font-weight: 600;
+  opacity: .5;
+  font-size: 16px;
+  line-height: 28px;
+}
+.modal-gameinfo .right {
+  float: right;
+  font-weight: 300;
+}
+.modal-gameinfo .bio {
+  margin-left: 60px;
+  font-weight: 300;
 }

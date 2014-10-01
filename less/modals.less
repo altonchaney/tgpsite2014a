@@ -30,8 +30,8 @@
 
   // When fading in the modal, animate it to slide down
   &.fade .modal-game {
-    .translate3d(0, -25%, 0);
-    .transition-transform(~"0.3s ease-out");
+    .translate3d(0, -100%, 0);
+    .transition-transform(~"0.5s ease-out");
   }
   &.in .modal-game { .translate3d(0, 0, 0) }
 }
@@ -50,14 +50,10 @@
 // Actual modal
 .modal-content {
   position: relative;
-  background-color: @modal-content-bg;
-  border: 1px solid @modal-content-fallback-border-color; //old browsers fallback (ie8 etc)
-  border: 1px solid @modal-content-border-color;
-  border-radius: @border-radius-large;
-  .box-shadow(0 3px 9px rgba(0,0,0,.5));
   background-clip: padding-box;
   // Remove focus outline from opened modal
   outline: 0;
+  height: 522px;
 }
 
 // Modal background
@@ -98,10 +94,11 @@
   position: relative;
   	width: 300px;
 	height: 340px;
-	margin: 0 auto;
-	padding: 0 30px 0 30px;
+	margin: -108px auto 0 auto;
+	padding: 24px 30px 0 30px;
 	background-image: url("../img/gameboy-background@2x.png");
 	background-size: 100% 100%;
+	font-family: @font-family-monospace;
 }
 
 // Footer (for actions)

@@ -50,28 +50,39 @@
 					<a href=""><p>Play now</p></a>
 				</div>
 				<div class="gameinfobutton">
-					<button data-toggle="modal" data-target="#gameboyPlanetKungFu"><p>i</p></button>
+					<a href="#" data-toggle="modal" data-target="#gameboyPlanetKungFu"><p>i</p></a>
 				</div>
 			</div>
 		</div>
 	</div>
 	
-	<div class="modal fade" id="gameboyPlanetKungFu" tabindex="-1" role="dialog" aria-labelledby="gameboyPlanetKungFuInfo" aria-hidden="true">
+	<div class="modal fade" id="gameboyPlanetKungFu" tabindex="-1" role="dialog" aria-labelledby="gameboyPlanetKungFuInfo" aria-hidden="true" >
 		<div class="modal-dialog">
 			<div class="modal-content">
 				<div class="modal-game">
-					<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-					<h4 class="modal-title">Modal title</h4>
+					<div class="cartridge">
+				<div class="gameimage"><img src="img/gameimage-(gamename)@2x.png"></div>
+				<div class="gameinfobar">
+					<p class="gameyear">2014</p>
+					<img class="gameplatformicon" src="img/game-icon-html5@2x.png">
+				</div>
+				<div class="gameplaybutton green">
+					<a href=""><p>Play now</p></a>
+				</div>
+				<div class="gameinfobutton">
+					<a href="#" data-toggle="modal" data-target="#gameboyPlanetKungFu"><p>i</p></a>
+				</div>
+			</div>
 				</div>
 		  		<div class="modal-body">
-		  			<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-					<p class="modal-gametitle">9LIVES</p>
+		  			<!--<button type="button" class="modal-closebutton" data-dismiss="modal">Close</button>-->
+					<p class="modal-gametitle"><a href="#" class="modal-closebutton" data-dismiss="modal">CLOSE</a>9LIVES</p>
 					<hr class="modal-divider">
 					<p class="modal-gameinfo">
-						RELEASE: 2010
-						PLATFORMS: Web
-						BIO: a lot of descriptive and possibly funny words
-						CODENAME: codename
+						RELEASE: <span class="right">2010</span> <br>
+						PLATFORMS: <span class="right">Web</span> <br>
+						BIO: <br><span class="bio">a lot of descriptive and possibly funny words</span> <br>
+						CODENAME: <span class="right">codename</span>
 					</p>
 		  		</div>
 			</div><!-- /.modal-content -->
