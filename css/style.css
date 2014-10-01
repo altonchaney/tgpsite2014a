@@ -5454,9 +5454,9 @@ button.close {
     height: 522px;
     margin: 30px auto;
   }
-  .modal-content {
-    -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  .modal-body {
+    -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
   }
 }
 .tooltip {
@@ -6278,6 +6278,21 @@ div.gameinfobutton p {
   font-weight: 300;
 }
 .modal-gameinfo .bio {
-  margin-left: 60px;
+  margin-left: 30px;
   font-weight: 300;
+}
+div.modal-gameplaybutton {
+  border-radius: 4px;
+  width: 122px;
+  height: 34px;
+  margin: 22px auto;
+  padding-top: 3px;
+}
+div.modal-gameplaybutton p {
+  font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 19px;
+  color: #000000;
+  opacity: .4;
+  text-align: center;
 }
