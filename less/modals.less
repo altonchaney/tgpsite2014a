@@ -29,11 +29,11 @@
   outline: 0;
 
   // When fading in the modal, animate it to slide down
-  &.fade .modal-dialog {
+  &.fade .modal-game {
     .translate3d(0, -25%, 0);
     .transition-transform(~"0.3s ease-out");
   }
-  &.in .modal-dialog { .translate3d(0, 0, 0) }
+  &.in .modal-game { .translate3d(0, 0, 0) }
 }
 .modal-open .modal {
   overflow-x: hidden;
@@ -68,10 +68,10 @@
   bottom: 0;
   left: 0;
   z-index: @zindex-modal-background;
-  background-color: @modal-backdrop-bg;
+  background-color: #ffffff;
   // Fade for backdrop
   &.fade { .opacity(0); }
-  &.in { .opacity(@modal-backdrop-opacity); }
+  &.in { .opacity(.9); }
 }
 
 // Modal header
@@ -96,7 +96,12 @@
 // Where all modal content resides (sibling of .modal-header and .modal-footer)
 .modal-body {
   position: relative;
-  padding: @modal-inner-padding;
+  	width: 300px;
+	height: 340px;
+	margin: 0 auto;
+	padding: 0 30px 0 30px;
+	background-image: url("../img/gameboy-background@2x.png");
+	background-size: 100% 100%;
 }
 
 // Footer (for actions)
@@ -134,17 +139,11 @@
 @media (min-width: @screen-sm-min) {
   // Automatically set modal's width for larger viewports
   .modal-dialog {
-    width: @modal-md;
+    width: 300px;
+    height: 522px;
     margin: 30px auto;
   }
   .modal-content {
     .box-shadow(0 5px 15px rgba(0,0,0,.5));
   }
-
-  // Modal sizes
-  .modal-sm { width: @modal-sm; }
-}
-
-@media (min-width: @screen-md-min) {
-  .modal-lg { width: @modal-lg; }
 }
