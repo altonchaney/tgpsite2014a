@@ -11,6 +11,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/css\/devblog.css": {
+		"fileType": 16,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/css\/devblog.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/css\/style.css": {
 		"fileType": 16,
 		"ignore": 1,
@@ -84,6 +93,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/game-icon-mule@2x.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 895,
+		"inputAbbreviatedPath": "\/img\/game-icon-mule@2x.png",
+		"outputAbbreviatedPath": "\/img\/game-icon-mule@2x.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/gameimage-9lives@2x.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -91,6 +111,28 @@
 		"initialSize": 2061,
 		"inputAbbreviatedPath": "\/img\/gameimage-9lives@2x.png",
 		"outputAbbreviatedPath": "\/img\/gameimage-9lives@2x.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/gameimage-backgammon@2x.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 48451,
+		"inputAbbreviatedPath": "\/img\/gameimage-backgammon@2x.png",
+		"outputAbbreviatedPath": "\/img\/gameimage-backgammon@2x.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/gameimage-planetkungfu2@2x.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 93668,
+		"inputAbbreviatedPath": "\/img\/gameimage-planetkungfu2@2x.png",
+		"outputAbbreviatedPath": "\/img\/gameimage-planetkungfu2@2x.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
