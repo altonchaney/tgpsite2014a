@@ -4,19 +4,26 @@
 
 
 .jumbotron {
-  padding: @jumbotron-padding;
-  margin-bottom: @jumbotron-padding;
-  color: @jumbotron-color;
-  background-color: @jumbotron-bg;
-
+  padding-left: 15%;
+  padding-top: 90px;
+  margin-top: -10px;
+  margin-bottom: -40px;
+  color: #aeb2b3;
+  background-image: url("../img/banner.jpg");
+background-repeat:no-repeat;
+background-position: center center;
+  height: 200px;
+  background-size: 150%;
+  
   h1,
   .h1 {
     color: @jumbotron-heading-color;
   }
   p {
     margin-bottom: (@jumbotron-padding / 2);
-    font-size: @jumbotron-font-size;
-    font-weight: 200;
+    font-size: 18px;
+    font-weight: 300;
+    opacity: .7;
   }
 
   > hr {
@@ -32,17 +39,22 @@
   }
 
   @media screen and (min-width: @screen-sm-min) {
-    padding-top:    (@jumbotron-padding * 1.6);
-    padding-bottom: (@jumbotron-padding * 1.6);
+    padding-top: 130px;
+    height: 300px;
+    background-size: auto;
+    margin-top: -40px;
+    margin-bottom: -80px;
 
-    .container & {
-      padding-left:  (@jumbotron-padding * 2);
-      padding-right: (@jumbotron-padding * 2);
-    }
-
-    h1,
+    p, h1,
     .h1 {
-      font-size: (@font-size-base * 4.5);
+      font-size: 26px;
     }
+    
+    
   }
+  @media screen and (min-width: @screen-md-max) {
+	  .container & {
+			padding-left: 200px;
+		}
+	}
 }

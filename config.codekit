@@ -2,6 +2,15 @@
 "CodeKitInfo": "This is a CodeKit 2.x project configuration file. It is designed to sync project settings across multiple machines. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. If you do so, you will likely cause CodeKit to crash. This file is not useful unless accompanied by the project that created it in CodeKit 2. This file is not backwards-compatible with CodeKit 1.x. For more information, see: http:\/\/incident57.com\/codekit",
 "creatorBuild": "17908",
 "files": {
+	"\/about.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/about.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/css\/style.css": {
 		"fileType": 16,
 		"ignore": 1,
@@ -19,6 +28,17 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
+		},
+	"\/img\/banner.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 9644,
+		"inputAbbreviatedPath": "\/img\/banner.jpg",
+		"outputAbbreviatedPath": "\/img\/banner.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
 		},
 	"\/img\/cartridge-background@2x.png": {
 		"fileType": 32768,
@@ -64,24 +84,68 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/img\/gameboy-background@2x.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 4537,
-		"inputAbbreviatedPath": "\/img\/gameboy-background@2x.png",
-		"outputAbbreviatedPath": "\/img\/gameboy-background@2x.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/img\/gameimage-(gamename)@2x.png": {
+	"\/img\/gameimage-9lives@2x.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 2061,
-		"inputAbbreviatedPath": "\/img\/gameimage-(gamename)@2x.png",
-		"outputAbbreviatedPath": "\/img\/gameimage-(gamename)@2x.png",
+		"inputAbbreviatedPath": "\/img\/gameimage-9lives@2x.png",
+		"outputAbbreviatedPath": "\/img\/gameimage-9lives@2x.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/gameimage-planetkungfu@2x.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2061,
+		"inputAbbreviatedPath": "\/img\/gameimage-planetkungfu@2x.png",
+		"outputAbbreviatedPath": "\/img\/gameimage-planetkungfu@2x.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/gameimage-polyplane@2x.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2061,
+		"inputAbbreviatedPath": "\/img\/gameimage-polyplane@2x.png",
+		"outputAbbreviatedPath": "\/img\/gameimage-polyplane@2x.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/gameimage-rickandtheghost@2x.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2061,
+		"inputAbbreviatedPath": "\/img\/gameimage-rickandtheghost@2x.png",
+		"outputAbbreviatedPath": "\/img\/gameimage-rickandtheghost@2x.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/gameimage-urbansprawl@2x.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2061,
+		"inputAbbreviatedPath": "\/img\/gameimage-urbansprawl@2x.png",
+		"outputAbbreviatedPath": "\/img\/gameimage-urbansprawl@2x.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/handheld-background@2x.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 5670,
+		"inputAbbreviatedPath": "\/img\/handheld-background@2x.png",
+		"outputAbbreviatedPath": "\/img\/handheld-background@2x.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
